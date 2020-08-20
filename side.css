@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: teal;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#mainbox {
+  font-size: 24px;
+  cursor: pointer;
+}
+.sidemenu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 90%;
+  background-color: #fff;
+  z-index: -1;
+  /* padding-top: 100px; */
+  overflow-x: scroll;
+  /* overflow-y: scroll; */
+  transition: all 0.3s linear;
+}
+.sidemenu a {
+  /* padding: 8px 8px 8px 64px; */
+  text-decoration: none;
+  font-size: 20px;
+  color: #999;
+  display: block;
+}
+.sidemenu a:hover {
+  color: white;
+}
+.sidemenu .closebtn {
+  position: absolute;
+  top: 15px;
+  font-size: 50px;
+  right: 5px;
+  /* background: whitesmoke; */
+  padding: 0 10px;
+  /* -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  background-color: white;
+}
+
+.logo-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* #cancel-btn {
+  background-color: whitesmoke;
+} */
+.logo-area .logo {
+  height: 90px;
+  width: 180px;
+  padding-left: 15px;
+}
+
+.container {
+  width: 75%;
+  /* max-width: 600px; */
+  margin: 50px 0;
+}
+
+button.accordian {
+  width: 100%;
+  background: #fff;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+button.accordian::after {
+  content: "\f0d7";
+  /* content: '\f0aa'; */
+  font-family: "fontawesome";
+  font-size: 14px;
+  margin-left: 10px;
+  /* float: right; */
+}
+
+button.accordian.is-open:after {
+  content: "\f0d8";
+}
+
+/* button.accordian:hover {
+  background-color: #ddd;
+} */
+
+
+.accordian-content {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+.show{
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/* .accordian-content.is-open{
+  max-height: 100%;
+}
+ */
+
+.accordian-content-list {
+  margin-left: 15px;
+}
+
+.accordian-content-list h4 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.accordian-content-list ul li {
+  padding: 10px 0;
+  list-style: none;
+}

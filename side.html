@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="side.css" />
+    <link rel="stylesheet" href="accordian.css" />
+    <script
+      src="https://kit.fontawesome.com/83436c7011.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="mainbox" onclick="openFunction()">&#9776; Open</div>
+    <div id="menu" class="sidemenu">
+      <div class="logo-area">
+        <img src="img/logo.svg" alt="" class="logo" />
+        <span id="cancel-btn"
+          ><a href="#" class="closebtn" onclick="closeFunction()"
+            >&times;</a
+          ></span
+        >
+      </div>
+      <div class="container">
+        <button class="accordian">Insurance</button>
+        <div class="accordian-content">
+          <div style="display: flex;">
+            <img
+              src="img/plant.png"
+              style="width: 100px; height: 100px;"
+              alt=""
+            />
+            <div class="accordian-content-list">
+              <h4>Life</h4>
+              <ul>
+                <li>Life Insurance</li>
+                <li>Cancer Insurance</li>
+                <li>Critical Illness</li>
+                <li>AD&D Insurance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <button class="accordian">Company</button>
+        <div class="accordian-content" style="display: flex;">
+          <img
+            src="img/plane.png"
+            style="width: 100px; height: 100px;"
+            alt=""
+          />
+          <div class="accordian-content-list">
+            <h4>Travel</h4>
+            <ul>
+              <li>Single-Trip Medical</li>
+              <li>Multi-Trip Medical</li>
+              <li>Trip Cancellation & Interuption</li>
+              <li>Top-ups</li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="accordian">Company</button>
+        <div class="accordian-content">
+          <div class="accordian-content-list">
+            <ul>
+              <li>About Us</li>
+              <li>Partners</li>
+              <li>In the News</li>
+              <li>Careers</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="accordian">Contact Us</button>
+        <div class="accordian-content">
+          <div class="accordian-content-list">
+            <h4 style="font-size: 25px; font-weight: 200;">Say Hello!</h4>
+            <ul>
+              <li style="display: flex;">
+                <img
+                  src="img/Call.svg"
+                  style="width: 20px; height: 20px; margin-right: 10px;"
+                  alt=""
+                />+1 (888)374-6673
+              </li>
+              <li style="display: flex;">
+                <img
+                  src="img/Email.svg"
+                  style="width: 20px; height: 20px; margin-right: 10px;"
+                  alt=""
+                />support@gooseinsurance.com
+              </li>
+              <li>
+                <a href="" style="font-size: 16px;">
+                  More options <i class="fas fa-chevron-circle-right"> </i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="accordian">Region</button>
+        <div class="accordian-content">
+          <div class="accordian-content-list">
+            <ul>
+              <li style="display: flex;">
+                <img
+                  src="img/Flag_Canada@2x.png"
+                  style="width: 20px; height: 20px; margin-right: 10px;"
+                  alt=""
+                />
+                Cananda (English)
+              </li>
+              <li style="display: flex;">
+                <img
+                  src="img/Flag_Canada@2x.png"
+                  style="width: 20px; height: 20px; margin-right: 10px;"
+                  alt=""
+                />
+                Canada (Francais)
+              </li>
+              <li>
+                United States (English)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- fsdfljsfdk -->
+        <div class="accordion">
+          <div class="accordion-box active">
+            <div class="heading">
+              <h3>What is is Javascript Accordion ?</h3>
+              <span class="fa fa-plus"></span>
+            </div>
+            <div class="body">
+              <div class="text">
+                <p>
+                  A JavaScript accordion is a useful way to squeeze lots of page
+                  content into a small space. It consists of a list of items, of
+                  which only one is expanded at any one time. When you click on
+                  another item's heading, the first item collapses and the
+                  second item expands
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-box">
+            <div class="heading">
+              <h3>What is JavaScript?</h3>
+              <span class="fa fa-plus"></span>
+            </div>
+            <div class="body">
+              <div class="text">
+                <p>
+                  JavaScript is a client-side as well as server side scripting
+                  language that can be inserted into HTML pages and is
+                  understood by web browsers. JavaScript is also an Object based
+                  Programming language
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-box">
+            <div class="heading">
+              <h3>Between JavaScript and an ASP script, which is faster?</h3>
+              <span class="fa fa-plus"></span>
+            </div>
+            <div class="body">
+              <div class="text">
+                <p>
+                  JavaScript is faster. JavaScript is a client-side language and
+                  thus it does not need the assistance of the web server to
+                  execute. On the other hand, ASP is a server-side language and
+                  hence is always slower than JavaScript. Javascript now is also
+                  a server side language (nodejs).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sdfjldfjlskf -->
+      </div>
+    </div>
+    <script>
+      function openFunction() {
+        document.getElementById("menu").style.width = "80%";
+        document.getElementById("mainbox").style.display = "none";
+      }
+      function closeFunction() {
+        document.getElementById("menu").style.width = "0px";
+        document.getElementById("mainbox").style.display = "block";
+      }
+    </script>
+    <script src="/scr.js"></script>
+    <script>
+      const accordion__Box = document.querySelector(".accordion").children;
+
+      for (let i = 0; i < accordion__Box.length; i++) {
+        const heading = accordion__Box[i].querySelector(".heading");
+
+        // open active accordion__Box
+        if (accordion__Box[i].classList.contains("active")) {
+          accordion__Box[i].querySelector(".body").style.maxHeight =
+            accordion__Box[i].querySelector(".body").scrollHeight + "px";
+          accordion__Box[i]
+            .querySelector(".heading span")
+            .classList.remove("fa-plus");
+          accordion__Box[i]
+            .querySelector(".heading span")
+            .classList.add("fa-minus");
+        }
+
+        heading.onclick = function () {
+          for (let j = 0; j < accordion__Box.length; j++) {
+            accordion__Box[j].querySelector(".body").style.maxHeight = "0px";
+            accordion__Box[j]
+              .querySelector(".heading span")
+              .classList.remove("fa-minus");
+            accordion__Box[j]
+              .querySelector(".heading span")
+              .classList.add("fa-plus");
+          }
+
+          accordion__Box[i].querySelector(".body").style.maxHeight =
+            accordion__Box[i].querySelector(".body").scrollHeight + "px";
+          accordion__Box[i]
+            .querySelector(".heading span")
+            .classList.remove("fa-plus");
+          accordion__Box[i]
+            .querySelector(".heading span")
+            .classList.add("fa-minus");
+        };
+      }
+    </script>
+  </body>
+</html>

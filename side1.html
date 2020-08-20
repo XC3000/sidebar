@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="side1.css" />
+    <link rel="stylesheet" href="accordian.css" />
+    <script
+      src="https://kit.fontawesome.com/83436c7011.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="mainbox" onclick="openFunction()" style="float: right">&#9776; Open</div>
+    <div id="menu" class="sidemenu">
+      <div class="logo-area">
+        <img src="img/logo.svg" alt="" class="logo" />
+        <span id="cancel-btn"
+          ><a href="#" class="closebtn" onclick="closeFunction()"
+            >&times;</a
+          ></span
+        >
+      </div>
+      <div class="container">
+        <!-- Accordian -->
+        <div class="accordion">
+          <!-- Insurance -->
+          <div class="accordion-box active">
+            <div class="heading">
+              <h3>Insurance</h3>
+              <span class="fa fa-plus"></span>
+            </div>
+            <div class="body">
+              <div class="text">
+                <div class="accordian-content">
+                  <div style="display: flex;">
+                    <img
+                      src="img/plant.png"
+                      style="width: 100px; height: 100px;"
+                      alt=""
+                    />
+                    <div class="accordian-content-list">
+                      <h4>Life</h4>
+                      <ul>
+                        <li>Life Insurance</li>
+                        <li>Cancer Insurance</li>
+                        <li>Critical Illness</li>
+                        <li>AD&D Insurance</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordian-content" style="display: flex; margin-top: 2rem;">
+                  <img
+                    src="img/plane.png"
+                    style="width: 100px; height: 100px;"
+                    alt=""
+                  />
+                  <div class="accordian-content-list">
+                    <h4>Travel</h4>
+                    <ul>
+                      <li>Single-Trip Medical</li>
+                      <li>Multi-Trip Medical</li>
+                      <li>Trip Cancellation & Interuption</li>
+                      <li>Top-ups</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Insurance Accordian Ends -->
+
+          <!-- Company Accordian -->
+          <div class="accordion-box">
+            <div class="heading">
+              <h3>Company</h3>
+              <span class="fa fa-plus"></span>
+            </div>
+            <div class="body">
+              <div class="text">
+                <div class="accordian-content">
+                  <div class="accordian-content-list">
+                    <ul>
+                      <li>About Us</li>
+                      <li>Partners</li>
+                      <li>In the News</li>
+                      <li>Careers</li>
+                      <li>Blog</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Company Accordian -->
+
+          <!-- Contact Us Accordian -->
+          <div class="accordion-box">
+            <div class="heading">
+              <h3>Contact Us</h3>
+              <span class="fa fa-plus"></span>
+            </div>
+            <div class="body">
+              <div class="text">
+                <div class="accordian-content">
+                  <div class="accordian-content-list">
+                    <h4 style="font-size: 25px; font-weight: 200;">
+                      Say Hello!
+                    </h4>
+                    <ul>
+                      <li style="display: flex;">
+                        <img
+                          src="img/Call.svg"
+                          style="width: 20px; height: 20px; margin-right: 10px;"
+                          alt=""
+                        />+1 (888)374-6673
+                      </li>
+                      <li style="display: flex;">
+                        <img
+                          src="img/Email.svg"
+                          style="width: 20px; height: 20px; margin-right: 10px;"
+                          alt=""
+                        />support@gooseinsurance.com
+                      </li>
+                      <li>
+                        <a href="" style="font-size: 16px;">
+                          More options
+                          <i class="fas fa-chevron-circle-right"> </i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Contact Us Accordian Ends-->
+
+          <!-- Region Accordian -->
+          <div class="accordion-box">
+            <div class="heading">
+              <h3>Region</h3>
+              <span class="fa fa-plus"></span>
+            </div>
+            <div class="body">
+              <div class="text">
+                <div class="accordian-content">
+                  <div class="accordian-content-list">
+                    <ul>
+                      <li style="display: flex;">
+                        <img
+                          src="img/Flag_Canada@2x.png"
+                          style="width: 20px; height: 20px; margin-right: 10px;"
+                          alt=""
+                        />
+                        Cananda (English)
+                      </li>
+                      <li style="display: flex;">
+                        <img
+                          src="img/Flag_Canada@2x.png"
+                          style="width: 20px; height: 20px; margin-right: 10px;"
+                          alt=""
+                        />
+                        Canada (Francais)
+                      </li>
+                      <li>
+                        United States (English)
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Region Accordian Ends-->
+        </div>
+        <!-- Accordian Box -->
+        <div class="accordion made-with-love">
+          <p>Made with <i class="fas fa-heart"></i> in Canada</p>
+        </div>
+      </div>
+      <!-- Sidebar div Ends -->
+    </div>
+    <script>
+      function openFunction() {
+        document.getElementById("menu").style.width = "90%";
+        document.getElementById("mainbox").style.display = "none";
+      }
+      function closeFunction() {
+        document.getElementById("menu").style.width = "0px";
+        document.getElementById("mainbox").style.display = "block";
+      }
+    </script>
+    <script src="/scr.js"></script>
+    <script>
+      const accordion__Box = document.querySelector(".accordion").children;
+
+      for (let i = 0; i < accordion__Box.length; i++) {
+        const heading = accordion__Box[i].querySelector(".heading");
+
+        // open active accordion__Box
+        if (accordion__Box[i].classList.contains("active")) {
+          accordion__Box[i].querySelector(".body").style.maxHeight =
+            accordion__Box[i].querySelector(".body").scrollHeight + "px";
+          accordion__Box[i]
+            .querySelector(".heading span")
+            .classList.remove("fa-plus");
+          accordion__Box[i]
+            .querySelector(".heading span")
+            .classList.add("fa-minus");
+        }
+
+        heading.onclick = function () {
+          for (let j = 0; j < accordion__Box.length; j++) {
+            accordion__Box[j].querySelector(".body").style.maxHeight = "0px";
+            accordion__Box[j]
+              .querySelector(".heading span")
+              .classList.remove("fa-minus");
+            accordion__Box[j]
+              .querySelector(".heading span")
+              .classList.add("fa-plus");
+          }
+
+          accordion__Box[i].querySelector(".body").style.maxHeight =
+            accordion__Box[i].querySelector(".body").scrollHeight + "px";
+          accordion__Box[i]
+            .querySelector(".heading span")
+            .classList.remove("fa-plus");
+          accordion__Box[i]
+            .querySelector(".heading span")
+            .classList.add("fa-minus");
+        };
+      }
+    </script>
+  </body>
+</html>
